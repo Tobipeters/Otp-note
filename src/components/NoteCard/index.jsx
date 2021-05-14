@@ -1,6 +1,6 @@
 import "./noteCard.style.css";
 import { FiStar, FiTrash2, FiCircle, FiMoreVertical } from "react-icons/fi";
-import { FaStar } from "react-icons/fa";
+// import { FaStar } from "react-icons/fa";
 import { Dropdown } from "react-bootstrap";
 
 const NoteCard = () => {

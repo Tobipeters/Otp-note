@@ -30,7 +30,7 @@ const Sidenav = () => {
       </div>
       <div id="mySidenav" className="sidenav">
         <a
-          href="javascript:void(0)"
+          href="#"
           className="closebtn d-inline-block d-md-none"
           onClick={closeNav}
         >

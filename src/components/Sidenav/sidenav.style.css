@@ -73,6 +73,9 @@
 
 @media screen and (max-width: 450px) {
     .mobile-top-nav {
+        background: #fff;
+        position: fixed;
+        z-index: 5;
         display: flex;
         align-items: center;
         width: 100%;
@@ -82,6 +85,12 @@
     }
     .mobile-top-nav .icon {
         font-size: 18px;
+    }
+    .sidenav .nav-menu {
+        margin-top: 100px;
+    }
+    .closebtn {
+        top: 60px;
     }
     .sidenav {
         width: 0;

@@ -21,7 +21,7 @@ const App = () => {
       <main>
         <div className="row align-items-center mb-4">
           <div className="col-md-6">
-            <div className="form-group mb-0">
+            <div className="form-group mb-0 search-bar">
               <input
                 type="text"
                 className="form-control "

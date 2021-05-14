@@ -8,7 +8,7 @@ import {
   FiX,
   FiSearch
 } from "react-icons/fi";
-// import { a } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Sidenav = () => {
   function openNav() {
@@ -37,10 +37,10 @@ const Sidenav = () => {
           <FiX />
         </a>
         <div className="nav-menu">
-          <a href="#">
+          <Link to={"/"}>
             <FiEdit className="icon" />
             <span>All Notes</span>
-          </a>
+          </Link>
           <a href="#">
             <FiStar className="icon" />
             <span>Favourites</span>

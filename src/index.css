@@ -2,6 +2,7 @@ body {
     font-family: "Nunito", sans-serif;
     background: #f1f2f3;
     height: 100vh;
+    position: relative;
 }
 
 .btn {

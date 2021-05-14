@@ -1,0 +1,58 @@
+.note-card {
+    position: relative;
+    padding: 16px 16px 6px 16px;
+    margin-right: 0;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #607d8b;
+}
+
+.note-card .note-title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #3b3f5c;
+}
+
+.note-card .note-date {
+    font-size: 14px;
+    color: rgb(119, 135, 204);
+}
+
+.note-card .note-text {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 1.5rem 0;
+    color: #515365;
+}
+
+.note-card .note-text,
+.note-card .note-title {
+    word-wrap: break-word;
+}
+
+.note-card .footer {
+    padding: 0 0 10px;
+}
+
+.note-card .footer .icon {
+    font-size: 20px;
+    color: #607d8b;
+    cursor: pointer;
+}
+
+.note-card .footer .star:hover {
+    color: #ffbb44;
+}
+
+.note-card .footer .trash:hover {
+    color: #e7515a;
+}
+
+.dropdwon-holder .dropdwon-btn {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}

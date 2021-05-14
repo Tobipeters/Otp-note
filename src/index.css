@@ -1,0 +1,67 @@
+body {
+    font-family: "Nunito", sans-serif;
+    background: #f1f2f3;
+    height: 100vh;
+}
+
+.btn {
+    box-shadow: 0px 5px 20px 0 rgb(0 0 0 / 10%);
+}
+
+.btn-primary {
+    background-color: #4361ee !important;
+    color: #fff !important;
+    font-weight: 600;
+    border: 1px solid #4361ee !important;
+    padding: 10px 25px;
+}
+
+.btn-primary :focus,
+.btn:focus {
+    box-shadow: 0px 10px 20px 0 rgb(0 0 0 / 10%) !important;
+}
+
+.btn-primary-outline {
+    background-color: #fff !important;
+    color: #4361ee !important;
+    font-weight: 700;
+    border: 1px solid #e8e8e8 !important;
+    padding: 10px 25px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px 2px rgb(194 213 255 / 62%) !important;
+    border-color: #4361ee !important;
+    color: #3b3f5c !important;
+}
+
+
+/* tag icon variant */
+
+.i-1,
+.i-2,
+.i-3,
+.i-4 {
+    border-radius: 50%;
+    font-size: 0.75rem !important;
+}
+
+.i-1 {
+    background: #e7f7ff;
+    color: #2196f3 !important;
+}
+
+.i-2 {
+    background: #fff9ed;
+    color: #e2a03f !important;
+}
+
+.i-3 {
+    background: #f3effc;
+    color: #805dca !important;
+}
+
+.i-4 {
+    background: #fff5f5;
+    color: #e7515a !important;
+}

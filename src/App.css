@@ -1,0 +1,47 @@
+.app {
+    font-family: "Nunito", sans-serif;
+    background: #f1f2f3 !important;
+}
+
+main {
+    margin-left: 300px;
+    padding: 16px;
+}
+
+.modal-body .title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #3b3f5c;
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        margin: 0;
+    }
+    .mobile-add-note {
+        position: absolute;
+        right: 16px;
+        bottom: 48px;
+        padding: 12px;
+        background: #4361ee;
+        border-radius: 50%;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        z-index: 3;
+    }
+    .mobile-add-note .icon {
+        font-size: 24px;
+        color: #fff;
+    }
+    .modal.show .modal-dialog {
+        height: 100%;
+        align-items: flex-end;
+        margin: 0;
+    }
+    .modal-content {
+        height: 75vh;
+        border-radius: 50px 50px 0 0 !important;
+    }
+    .modal-body {
+        padding: 2.5rem 1.2rem !important;
+    }
+}

@@ -37,10 +37,10 @@ const Sidenav = () => {
           <FiX />
         </a>
         <div className="nav-menu">
-          <Link to={"/"}>
+          <a to={"/"}>
             <FiEdit className="icon" />
             <span>All Notes</span>
-          </Link>
+          </a>
           <a href="#">
             <FiStar className="icon" />
             <span>Favourites</span>

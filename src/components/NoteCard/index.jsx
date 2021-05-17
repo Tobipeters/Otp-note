@@ -3,17 +3,16 @@ import { FiStar, FiTrash2, FiCircle, FiMoreVertical } from "react-icons/fi";
 // import { FaStar } from "react-icons/fa";
 import { Dropdown } from "react-bootstrap";
 
-const NoteCard = () => {
+const NoteCard = props => {
+  console.log("[card props]", props);
   return (
     <div className="card note-card">
-      <h6 className="note-title mb-1">Meeting with Kelly</h6>
-      <h6 className="mb-0 note-date">11/01/2020</h6>
-      <p className="mb-0 note-text">
-        Suspendisse efficitur diam quis gravida. Nunc molestie est eros.
-      </p>
+      <h6 className="note-title mb-1">{props.title}</h6>
+      <h6 className="mb-0 note-date">{props.date}</h6>
+      <p className="mb-0 note-text">{props.desc}</p>
       <div className="d-flex align-items-center footer">
         <FiStar className="icon mr-3 star" />
-        <FiTrash2 className="icon trash" />
+        <FiTrash2 className="icon trash" onClick={props.deleteClick} />
         <Dropdown className="ml-auto dropdwon-holder">
           <Dropdown.Toggle className="dropdwon-btn">
             <FiMoreVertical className="icon" />

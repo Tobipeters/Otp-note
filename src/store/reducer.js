@@ -22,6 +22,11 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 allNotes: state.allNotes.filter(note => note.timeStamp !== action.timeStamp)
             }
+            // case actionTypes.ADD_FAVOURITE_NOTE:
+            //     return {
+            //         ...state,
+            //         allNotes: !state.allNotes.favourite
+            //     }
     }
     return state;
 }

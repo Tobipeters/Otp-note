@@ -1,3 +1,4 @@
 export const TOGGLE_MODAL = 'TOGGLE_MODAL'
 export const ADD_NOTE = 'ADD_NOTE'
 export const DELETE_NOTE = 'DELETE_NOTE'
+export const ADD_FAVOURITE_NOTE = 'ADD_FAVOURITE_NOTE'

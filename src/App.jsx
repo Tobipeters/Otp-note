@@ -9,7 +9,6 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import { connect } from "react-redux";
 import * as actionTypes from "./store/action";
-import { dateTimeFumc } from "./utilities/utilities";
 
 const schema = yup.object().shape({
   noteTitle: yup
@@ -59,10 +58,9 @@ const App = props => {
                     key={index}
                     title={note.noteTitle}
                     desc={note.noteDesc}
-                    date={dateTimeFumc(note.timeStamp, {
-                      strokeDate: "DD/MM/YYYY"
-                    })}
+                    date={note.timeStamp}
                     deleteClick={() => props.onDeleteNote(note.timeStamp)}
+                    favClick={() => props.onAddFav(note.timeStamp)}
                   />
                 </div>
               ))}
@@ -77,7 +75,9 @@ const App = props => {
             initialValues={{
               noteTitle: "",
               noteDesc: "",
-              timeStamp: new Date()
+              timeStamp: new Date(),
+              favourite: false,
+              tag: ""
             }}
             onSubmit={(values, setSubmitting) => {
               console.log(values);
@@ -159,7 +159,9 @@ const mapDispatchToProps = dispatch => {
     onToggleModal: () => dispatch({ type: actionTypes.TOGGLE_MODAL }),
     onAddNote: note => dispatch({ type: actionTypes.ADD_NOTE, value: note }),
     onDeleteNote: timeStamp =>
-      dispatch({ type: actionTypes.DELETE_NOTE, timeStamp })
+      dispatch({ type: actionTypes.DELETE_NOTE, timeStamp }),
+    onAddFav: timeStamp =>
+      dispatch({ type: actionTypes.ADD_FAVOURITE_NOTE, timeStamp })
   };
 };
 

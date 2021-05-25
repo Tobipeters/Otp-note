@@ -2,13 +2,18 @@ import "./noteCard.style.css";
 import { FiStar, FiTrash2, FiCircle, FiMoreVertical } from "react-icons/fi";
 // import { FaStar } from "react-icons/fa";
 import { Dropdown } from "react-bootstrap";
+import { dateTimeFumc } from "../../utilities/utilities";
 
 const NoteCard = props => {
   console.log("[card props]", props);
   return (
     <div className="card note-card">
       <h6 className="note-title mb-1">{props.title}</h6>
-      <h6 className="mb-0 note-date">{props.date}</h6>
+      <h6 className="mb-0 note-date">
+        {dateTimeFumc(props.date, {
+          strokeDate: "DD/MM/YYYY"
+        })}
+      </h6>
       <p className="mb-0 note-text">{props.desc}</p>
       <div className="d-flex align-items-center footer">
         <FiStar className="icon mr-3 star" />
